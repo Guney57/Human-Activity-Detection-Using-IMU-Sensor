@@ -1,1 +1,4 @@
 # IMU SENSÖRÜ İLE İNSAN AKTİVİTESİ TESPİTİ
+Bu proje, IMU sensörlerinden (MPU6050) elde edilen ivme ve jiroskop verileri kullanılarak insan aktivitelerinin (yürüme, koşma, merdiven çıkma) sınıflandırılmasını amaçlamaktadır. Veriler, Raspberry Pico W mikrodenetleyicisi üzerinden UART protokolü ile toplanmış ve Python (Jupyter Notebook) ile Matlab ortamlarında analiz edilmiştir.
+Çalışmada, FIR filtre tasarımı, Fourier dönüşümü ve STFT (Short-Time Fourier Transform) analizleri gerçekleştirilmiş; farklı aktivitelerin frekans alanındaki karakteristik farkları incelenmiştir. Filtre tasarımı için Hamming penceresi kullanılarak PyFDA aracıyla dijital filtreler oluşturulmuştur.
+Proje, veri toplama, sinyal ön işleme, frekans analizi ve sınıflandırma aşamalarını kapsayan bütünleşik bir sinyal işleme sürecini ortaya koymaktadır.
